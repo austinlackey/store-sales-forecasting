@@ -18,8 +18,9 @@
 \usepackage{subcaption}
 \usepackage{booktabs}
 \usepackage{placeins}
+\usepackage{float}
 \usepackage[margin=1in]{geometry}
-
+\floatplacement{figure}{H}
 \title{Forecasting Grocery Store Product Sales}
 \author{Austin Lackey}
 \author{Tomy Sabalo Farias}
@@ -38,13 +39,15 @@ Our methodology is split into three main sections: data preprocessing, model eng
 In this project, we use a variety of models including linear and polynomial regression and gradient boosting.
 \end{abstract}
 
-\section{Introduction and Background}
-The 'Store Sales' time series forecasting dataset contains sales data from Favorita Grocery Stores in Ecuador from 2013 to 2017.
-Sales data is broken down by store and product category for each day (pair-wise combinations $stores \times products$).
-The goal of this project is to forecast sales for each store and product category for any given day in the future.
-Below is a brief description of the variables that were provided in the raw dataset.
-% insert table here, header: variable, unique counts, description
-\begin{table}[h]
+\section{Introduction}
+\subsection{Background}
+The 'Store Sales' time series forecasting dataset contains sales data from Favorita Grocery Stores in Ecuador from 2013 to 2017\cite{kaggle}.
+Sales data is broken down by store and product category for each day (1,782 pair-wise combinations $=stores \times products$).
+\subsection{Problem Statement}
+The goal of this project is to forecast sales for each store and product category for the next day while reducing $RMSE$.
+$RMSE$ is defined as the square root of the average of the squared differences between the forecasted and actual sales.
+\[ RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2} \]
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -59,11 +62,14 @@ cluster & int64 & 17 & Cluster of the store (Similar stores grouped together) \\
 \end{tabular}
 \caption{Variable Descriptions}
 \end{table}
+For each day, we are making 1,782 pair-wise predictions of store and product category sales.
+This is a challenging problem since sales are influenced by more than just the seasonality.
+Below is an example that shows the sales over the course of a three-month period for only the top 5 product categories for the store with the most sales.
 \\
 \includegraphics[width=\textwidth]{figures/Top 5 Products.png}
+\captionof{figure}{Top 5 Product Categories for Store 44}
 Fix plot and expand on it later...
-% table to represent an example of pair-wise combinations
-\begin{table}[h]
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
@@ -71,27 +77,40 @@ Fix plot and expand on it later...
 2013-01-01 & 1 & Grocery \\ \hline
 2013-01-01 & 1 & Beverages \\ \hline
 2013-01-01 & 1 & Deli \\ \hline
-\dots & \dots & \dots \\ \hline
+\vdots & \vdots & \vdots \\ \hline
 2013-01-01 & 54 & Grocery \\ \hline
 2013-01-01 & 54 & Beverages \\ \hline
 2013-01-01 & 54 & Deli \\ \hline
-\dots & \dots & \dots \\ \hline
+\vdots & \vdots & \vdots \\ \hline
 2013-01-02 & 1 & Grocery \\ \hline
-\dots & \dots & \dots \\ \hline
+\vdots & \vdots & \vdots \\ \hline
 \end{tabular}
 \caption{Example of Pair-Wise Combinations}
 \end{table}
-\section{Feature Engineering}
+\section{Solution}
+\subsection{Feature Engineering}
 The biggest challenge in this project was to create a feature set that would allow us to forecast sales for each store and product category.
 We found that the most important part in reducing $RMSE$ was to create a feature set that captured as much information regarding seasonality and trends as possible.
 We created a feature set that included the following extra variables:
+
 \begin{itemize}
     \item \textbf{Datetime Features:} We created features that captured what day of the week it was, the day of the month, the month, the quarter, the week of the year and the year.
     \item \textbf{Lag Features:} We implemented a 7-day lag feature to capture the previous week's sales that led up to the current day. This feature really helped the model fine-tune the forecast.
     \item \textbf{Store-Specific Features:} We joined the store data with the sales data to give the model more information about the store. 
 \end{itemize}
 Expand more here\dots
-\section{Model Engineering}
+\subsection{Model Engineering}
 Add intro here\dots \\
 \includegraphics[width=\textwidth]{figures/XGBoost.png}
+
+\begin{thebibliography}{9}
+\bibitem{kaggle}
+Favorita Grocery Store Sales - Time Series Forecasting. Kaggle. Retrieved from \url{https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data}
+\bibitem{xgboost}
+XGBoost Documentation. dmlc. Retrieved from \url{https://xgboost.readthedocs.io/en/stable/python/python_api.html}
+\bibitem{Insert more here...}
+Insert more here...
+\end{thebibliography}
+
+
 \end{document}
