@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.6)  20 FEB 2024 21:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.6)  20 FEB 2024 22:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -773,87 +773,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--67
 <figures/Top 5 Products.png, id=68, 1011.0573pt x 539.1342pt>
 File: figures/Top 5 Products.png Graphic file (type png)
 <use figures/Top 5 Products.png>
-Package pdftex.def Info: figures/Top 5 Products.png  used on input line 81.
+Package pdftex.def Info: figures/Top 5 Products.png  used on input line 82.
 (pdftex.def)             Requested size: 469.75502pt x 250.48915pt.
 
 Package caption Warning: \setcaptiontype
-(caption)                outside box or environment on input line 82.
+(caption)                outside box or environment on input line 83.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 82.
+(caption)                particular \caption on input line 83.
 See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--83
+
+ []
 
 [2 <./figures/Top 5 Products.png>]
 <figures/seasonality.png, id=80, 1301.5827pt x 635.976pt>
 File: figures/seasonality.png Graphic file (type png)
 <use figures/seasonality.png>
-Package pdftex.def Info: figures/seasonality.png  used on input line 115.
+Package pdftex.def Info: figures/seasonality.png  used on input line 116.
 (pdftex.def)             Requested size: 469.75502pt x 229.53343pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 116.
+(caption)                particular \caption on input line 117.
 See the caption package documentation for explanation.
 
 [3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 <figures/oil.png, id=88, 1000.2168pt x 539.1342pt>
 File: figures/oil.png Graphic file (type png)
 <use figures/oil.png>
-Package pdftex.def Info: figures/oil.png  used on input line 117.
+Package pdftex.def Info: figures/oil.png  used on input line 118.
 (pdftex.def)             Requested size: 469.75502pt x 253.21213pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 118.
+(caption)                particular \caption on input line 119.
 See the caption package documentation for explanation.
 
 [4 <./figures/seasonality.png> <./figures/oil.png>]
 <figures/rmse.png, id=101, 1011.0573pt x 539.1342pt>
 File: figures/rmse.png Graphic file (type png)
 <use figures/rmse.png>
-Package pdftex.def Info: figures/rmse.png  used on input line 161.
+Package pdftex.def Info: figures/rmse.png  used on input line 162.
 (pdftex.def)             Requested size: 469.75502pt x 250.48915pt.
  [5]
 <figures/XGBoost.png, id=109, 1140.4206pt x 851.3406pt>
 File: figures/XGBoost.png Graphic file (type png)
 <use figures/XGBoost.png>
-Package pdftex.def Info: figures/XGBoost.png  used on input line 163.
+Package pdftex.def Info: figures/XGBoost.png  used on input line 165.
 (pdftex.def)             Requested size: 469.75502pt x 350.6757pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 164.
+(caption)                particular \caption on input line 166.
 See the caption package documentation for explanation.
 
-[6 <./figures/rmse.png> <./figures/XGBoost.png>]
-Underfull \hbox (badness 3108) in paragraph at lines 181--182
+[6 <./figures/rmse.png>] [7 <./figures/XGBoost.png>]
+Underfull \hbox (badness 3108) in paragraph at lines 183--184
 []\OT1/cmr/m/n/12 XGBoost: A Com-plete Guide to Fine-Tune and Op-ti-mize your Model. To-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 \OT1/cmr/m/n/12 wards Data Sci-ence. Re-trieved from []$\OT1/cmtt/m/n/12 https : / / towardsdatascience . com /
  []
 
-[7] (./paper.aux)
+[8] (./paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: A2CA488FC6A9CCA24883BD920FC4AC6C;1454.
  ) 
 Here is how much of TeX's memory you used:
- 36652 strings out of 476025
- 804658 string characters out of 5790017
+ 36653 strings out of 476025
+ 804664 string characters out of 5790017
  1862388 words of memory out of 5000000
  56572 multiletter control sequences out of 15000+600000
  520659 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,80p,1600b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,80p,1600b,544s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (7 pages, 1262803 bytes).
+Output written on paper.pdf (8 pages, 1263654 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
+ 198 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

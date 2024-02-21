@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1708490848 "paper.tex" "paper.pdf" "paper" 1708490850 0
+["pdflatex"] 1708494201 "paper.tex" "paper.pdf" "paper" 1708494203 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -214,9 +214,9 @@
   "figures/oil.png" 1708488288 79817 b2b621cac9b41577b91ba094467bc71b ""
   "figures/rmse.png" 1708486643 28646 4b8981096c7ce5aad6c35c7382832d1c ""
   "figures/seasonality.png" 1708487608 149932 178ba6019c7ef235ae4f1c3094fac694 ""
-  "paper.aux" 1708490850 3253 8b6c1d082ee28a2c37777a44df306db1 "pdflatex"
-  "paper.out" 1708490850 1454 a2ca488fc6a9cca24883bd920fc4ac6c "pdflatex"
-  "paper.tex" 1708490845 10795 8b9a178b33c184c35bbbe7aafae8979b ""
+  "paper.aux" 1708494203 3253 c92bfdbe1fe03d8b83b657e1d9a18bba "pdflatex"
+  "paper.out" 1708494203 1454 a2ca488fc6a9cca24883bd920fc4ac6c "pdflatex"
+  "paper.tex" 1708494200 11052 7338f50b79628b7cea7c689a8b4b6fdd ""
   (generated)
   "paper.aux"
   "paper.log"

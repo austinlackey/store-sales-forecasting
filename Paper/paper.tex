@@ -37,9 +37,9 @@
 
 \begin{abstract}
 This paper presents a methodology for forecasting grocery store sales across many stores and product subsets.
-The data is used in this project from Favorita Grocery Stores in Ecuador from 2013 to 2017 and is provided by Kaggle.
+The data used in this project is from Favorita Grocery Stores in Ecuador from 2013 to 2017 and is provided by Kaggle.
 A link to the data can be found in the references at the end of this paper. The work entailed individual, predictive models that were narrowed down to our best and final model.
-In this project, we use a variety of models including linear \& polynomial regression, lag series, and gradient-boosting. 
+In this project, we use a variety of models including linear \& polynomial regression, and gradient-boosting. 
 Our methodology is split into two main sections: the characteristics surrounding the problem and our model solution. We will be centering our write-up around a gradient-boosting model that was most effective.
 \end{abstract}
 
@@ -78,6 +78,7 @@ For each day, we are making predictions for each store and product category comb
 This is a challenging problem since sales are influenced by more than just the seasonality.
 Below is an example that shows the sales over the course of a three-month period for only the top 5 product categories for the store with the most sales.
 \\
+\\
 \includegraphics[width=\textwidth]{figures/Top 5 Products.png}
 \captionof{figure}{Top 5 Product Categories for Store 44}
 \begin{table}[H]
@@ -107,8 +108,8 @@ We found that the most important part in reducing $RMSE$ was to create a feature
 We created a feature set that included the following extra variables:
 
 \begin{itemize}
-    \item \textbf{Datetime Features:} We created features that captured what day of the week it was, the day of the month, the month, the quarter, the week of the year and the year. It is clear that the day of the week, end of month, etc. can have some correlation with sales. As you can see in Figure 2 below, there is a clear seasonality in the data.
-    \item \textbf{Lag Features:} A lag feature gives the model information about the previous day or days. We implemented a 7-day lag feature with the sales of pervious days. It makes sense that the sales of yesterday or two days ago would have some kind of indication on the sales of today. This is common practice in time-series forecasting. Lag features essentially give the model more context and significantly increases accuracy.
+    \item \textbf{Datetime Features:} We created features that captured what day of the week it was, the day of the month, the month, the quarter, the week of the year and the year. It is clear that the day of the week, and month, etc. can have some correlation with sales. As you can see in Figure 2 below, there is a clear seasonality in the data.
+    \item \textbf{Lag Features:} A lag feature gives the model information about the previous day or days. We implemented a 7-day lag feature with the sales of previous days. It makes sense that the sales of yesterday or two days ago would have some kind of indication on the sales of today. This is common practice in time-series forecasting. Lag features essentially give the model more context and significantly increases accuracy.
     \item \textbf{Store-Specific Features:} We joined the store data with the sales data to give the model more information about the store. This includes information as specific as which product categories had a promotion that day.
     \item \textbf{Outside Data:} We also joined the sales data with oil prices since Ecuador is heavily dependent on the oil industry\cite{kaggle}. We can see that there is a negative correlation between oil prices and the sum of sales for stores within Ecuador in Figure 3 below.
 \end{itemize}
@@ -160,6 +161,7 @@ We can see this in the plot and table below, after 100 iterations, the $RMSE$ be
 \end{table}
 \includegraphics[width=\textwidth]{figures/rmse.png}
 \subsubsection{Evaluating the Predictions}
+The blue line in the plot below represents the actual sales, while the red line represents the predicted sales. Predictions were made from 2016-12-05 to 2017-08-15 which accounted for 15\% of the data, RMSE for all stores and products over this time period was 319.10.
 \includegraphics[width=\textwidth]{figures/XGBoost.png}
 \captionof{figure}{XGBoost Predictions}
 Since we are making 1,782 pair-wise predictions, let's just take a look at the top 3 product categories for the top 4 stores.
