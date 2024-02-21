@@ -1105,6 +1105,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -1135,7 +1136,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./figures/Top 5 Products.png
 INPUT ./figures/Top 5 Products.png
@@ -1143,12 +1143,27 @@ INPUT figures/Top 5 Products.png
 INPUT ./figures/Top 5 Products.png
 INPUT ./figures/Top 5 Products.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT ./figures/seasonality.png
+INPUT ./figures/seasonality.png
+INPUT figures/seasonality.png
+INPUT ./figures/seasonality.png
+INPUT ./figures/seasonality.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./figures/oil.png
+INPUT ./figures/oil.png
+INPUT figures/oil.png
+INPUT ./figures/oil.png
+INPUT ./figures/oil.png
+INPUT ./figures/rmse.png
+INPUT ./figures/rmse.png
+INPUT figures/rmse.png
+INPUT ./figures/rmse.png
+INPUT ./figures/rmse.png
 INPUT ./figures/XGBoost.png
 INPUT ./figures/XGBoost.png
 INPUT figures/XGBoost.png
 INPUT ./figures/XGBoost.png
 INPUT ./figures/XGBoost.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT paper.aux
 INPUT ./paper.out

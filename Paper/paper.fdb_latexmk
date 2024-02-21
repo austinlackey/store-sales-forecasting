@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1708473160 "paper.tex" "paper.pdf" "paper" 1708473161 0
+["pdflatex"] 1708490848 "paper.tex" "paper.pdf" "paper" 1708490850 0
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -209,11 +209,14 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1696593134 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1696593086 7883455 3213e49428ab4bfa087dcf51b8d3ea8b ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "figures/Top 5 Products.png" 1708411813 251488 129e1ea37c3945de0718f269070e5648 ""
-  "figures/XGBoost.png" 1708411862 835255 39f9bc07956cd605ab130e1c81d08ec8 ""
-  "paper.aux" 1708473161 1808 7a955dda07a2a1ccbbf24abda2982c32 "pdflatex"
-  "paper.out" 1708473161 738 27a0691bf97d369d2a09d1fa2860530d "pdflatex"
-  "paper.tex" 1708473158 5199 728165bc43dd92110937b0ff5fc6a54d ""
+  "figures/Top 5 Products.png" 1708487174 252232 56967761e3372a05acd85bc4fb76cb9d ""
+  "figures/XGBoost.png" 1708487064 753700 77d2707fd597e27fb081890b61daf8f4 ""
+  "figures/oil.png" 1708488288 79817 b2b621cac9b41577b91ba094467bc71b ""
+  "figures/rmse.png" 1708486643 28646 4b8981096c7ce5aad6c35c7382832d1c ""
+  "figures/seasonality.png" 1708487608 149932 178ba6019c7ef235ae4f1c3094fac694 ""
+  "paper.aux" 1708490850 3253 8b6c1d082ee28a2c37777a44df306db1 "pdflatex"
+  "paper.out" 1708490850 1454 a2ca488fc6a9cca24883bd920fc4ac6c "pdflatex"
+  "paper.tex" 1708490845 10795 8b9a178b33c184c35bbbe7aafae8979b ""
   (generated)
   "paper.aux"
   "paper.log"
